@@ -1,0 +1,56 @@
+@use "variables";
+
+.header{
+    background-color: variables.$ColorOnePadrao;
+
+    &__links{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: .7rem;
+        padding: 0 1rem;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        &__item{
+            color: variables.$colorLink;
+            transition: .4s;
+
+            &:hover{
+                color: variables.$corPadrao;
+            }
+        }
+
+    }
+
+    &__bottom{
+        font-size: .8rem;
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+
+        &__inner{
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        &__text{
+            font-size: 1.2rem;
+        }
+
+        &__links{
+            color: variables.$ColorOnePadrao;
+            margin: 0 0.5rem;
+
+            &--is-btn{
+                background-color: variables.$fundoBtn;
+                border-radius: 10rem;
+                padding: .4rem 1rem;
+                color: variables.$corPadrao;
+            }
+        }
+    }
+
+}

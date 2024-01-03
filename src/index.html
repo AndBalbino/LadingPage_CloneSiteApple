@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clone Site Apple</title>
     <link rel="stylesheet" href="styles/main.scss">
 </head>
+
 <body>
-    <h1>ola</h1>
-    <img src="./imagens/iphone_blue.jpg" alt="">
+    <header>
+        <nav class="header">
+            <ul class="header__links" id="navbar">
+                <li id="logo">
+                    <a class="header__links__item" href="#">
+                        <img src="./imagens/logo_apple.svg" alt="Apple Store">
+                    </a>
+                </li>
+                <li>
+                    <a class="header__links__item" href="#">Loja</a>
+                </li>
+                <li>
+                    <a class="header__links__item" href="#">Mac</a>
+                </li>
+                <li>
+                    <a class="header__links__item" href="#">iPad</a>
+                </li>
+                <li>
+                    <a class="header__links__item" href="#">iPhone</a>
+                </li>
+                <li>
+                    <a class="header__links__item" href="#">Watch</a>
+                </li>
+                <li>
+                    <a class="header__links__item" href="#">AirPods</a>
+                </li>
+                <li>
+                    <a class="header__links__item" href="#">Só na Apple</a>
+                </li>
+                <li>
+                    <a class="header__links__item" href="#">Acessórios</a>
+                </li>
+                <li>
+                    <a class="header__links__item" href="#">Suporte</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__bottom" id="bottom-header">
+            <div class="header__bottom__inner" id="bottom-header-inner">
+                <h3 class="header__bottom__text">iPhone 13 Pro</h3>
+                <div id="bottom-header-links">
+                    <a class="header__bottom__links" href="#">Visão geral</a>
+                    <a class="header__bottom__links" href="#">Mudar para o iPhone</a>
+                    <a class="header__bottom__links" href="#">Especificações</a>
+                    <a class="header__bottom__links header__bottom__links--is-btn" href="#">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="ribbon">
+        <p>Pague seu novo iPhone em até 12 parcelas ou economize 10% nos pagamentos à vista
+            <a href="#">Saiba mais</a>
+        </p>
+    </div>
+    <h1 id="title">iPhone 13 Pro</h1>
+    <p id="subtitle">É todo Pro.</p>
+    <p id="description">
+        O iPhone 13 pro é uma enorme evolução. Ele traz uma rapidez absurda a tudo
+        o que você faz e vem com novos recursos espetaculares para fotos e vídeos.
+        Tudo em dois tamanhos.
+    </p>
+    <p>
+        E pra você não ficar de fora dessa evolução preparamos uma promoção inusitada no aniversário do gerente, 25% de
+        desconto em todos os produtos da loja.
+    </p>
+    <p>Promoção começa em:
+        <span id="contador"></span>
+    </p>
+    <p class="price">De R$ 9.499 por:
+        <span class="price__dec">R$ 7.124,25</span>
+    </p>
+    <a href="#" class="btn">Comprar</a>
+
+    <img src="./imagens/iphone_green.jpg" alt="iPhone 13 pro" id="product-image">
+    <div class="image__picker" id="image-picker">
+        <ul>
+            <li id="green">
+                <span class="image__picker__color selected"></span>
+                <span class="image__picker__description">Verde-alpino</span>
+            </li>
+            <li id="silver">
+                <span class="image__picker__color"></span>
+                <span class="image__picker__description">Prateado</span>
+            </li>
+            <li id="golden">
+                <span class="image__picker__color"></span>
+                <span class="image__picker__description">Dourado</span>
+            </li>
+            <li id="grafite">
+                <span class="image__picker__color"></span>
+                <span class="image__picker__description">Grafite</span>
+            </li>
+            <li id="blue">
+                <span class="image__picker__color"></span>
+                <span class="image__picker__description">Azul-Sierra</span>
+            </li>
+        </ul>
+    </div>
 
     <script src="scripts/main.js"></script>
-    
 </body>
+
 </html>
