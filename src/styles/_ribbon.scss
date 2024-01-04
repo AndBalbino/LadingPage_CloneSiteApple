@@ -1,0 +1,17 @@
+@use "variables";
+
+.ribbon{
+    text-align: center;
+    padding: 1rem;
+    background-color: variables.$colorLink;
+ 
+    &__text{
+        color: variables.$colorTwoPadrao;
+        font-size: 0.8rem;
+
+    }
+
+    &__link{
+        color: variables.$fundoBtn;
+    }
+}

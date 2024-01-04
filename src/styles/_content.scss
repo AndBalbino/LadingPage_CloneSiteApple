@@ -1,0 +1,155 @@
+@use "variables";
+
+.content{
+    text-align: center;
+    color: variables.$colorTwoPadrao;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: variables.$colorTwoPadrao;
+
+    &__title{
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+
+    &__subtitle{
+        margin: 1rem;
+        font-size: 4rem;
+        font-weight: bold;
+
+        @media (max-width: 480px){
+            font-size: 3rem;
+        }
+    }
+
+    &__text{
+        max-width: 600px;
+        margin: 1rem auto;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+
+        &__promo{
+        max-width: 600px;
+        margin: 1rem auto;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        }
+
+        &__cont{
+            background-color: variables.$colorCont;
+            padding: 0.5rem;
+            box-shadow: 1px 1px 2px;
+
+            @media (max-width: 480px){
+                display: block;
+                margin-top: 1rem;
+            }
+
+        }
+
+        &__price{
+            font-size: 1.3rem;
+            color: variables.$colorThreePadrao;
+            margin: 2rem;
+
+
+            &__dec{
+                text-decoration: line-through;
+            }
+
+            @media (max-width: 480px){
+                font-size: 1.2rem;
+                
+            }
+        }
+
+        &--is-btn{
+            font-size: 1.1rem;
+            padding: 0.8rem 1.4rem;
+            align-self: center;
+            background-color: variables.$fundoBtn;
+            border-radius: 10rem;
+            color: variables.$corPadrao;
+        }
+    }
+
+    &__image{
+        max-width: 1000px;
+        margin: 3rem auto;
+        opacity: 1;
+        transition: 0.5s;
+
+        @media (max-width: 768px){
+            max-width: 100%;
+        }
+
+       &--is-active{
+        opacity: 0.5
+       }
+
+       &__picker{
+        margin-bottom: 500px;
+       }
+
+    }
+
+    &__order{
+        display: flex;
+        justify-content: center;
+
+        &__item{
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+            
+        }
+
+        &__color{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            box-shadow: 1px 1px 1px;
+            border: 4px solid #fff;
+            pointer-events: none;
+
+            &--selected{
+                outline: 2px solid variables.$colorSelected;
+            }
+
+            &--green{
+                background-color: variables.$colorGreen;
+            }
+            &--silver{
+                background-color: variables.$colorSilver;
+            }
+            &--golden{
+                background-color: variables.$colorGolden;
+            }
+            &--grafite{
+                background-color: variables.$colorGrafite;
+            }
+            &--blue{
+                background-color: variables.$colorBlue;
+            }
+
+        }
+
+        &__description{
+            font-size: .7rem;
+            color: variables.$colorTwoPadrao;
+            margin-top: .6rem;
+        }
+       }
+
+       @media (max-width: 480px){
+        padding: 2rem;
+        overflow: hidden;
+       }
+
+    
+    
+}

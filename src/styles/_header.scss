@@ -3,6 +3,7 @@
 .header{
     background-color: variables.$ColorOnePadrao;
 
+
     &__links{
         display: flex;
         justify-content: space-around;
@@ -11,6 +12,8 @@
         padding: 0 1rem;
         max-width: 1000px;
         margin: 0 auto;
+
+        
 
         &__item{
             color: variables.$colorLink;
@@ -47,10 +50,46 @@
             &--is-btn{
                 background-color: variables.$fundoBtn;
                 border-radius: 10rem;
-                padding: .4rem 1rem;
+                padding: 0.4rem 1rem;
                 color: variables.$corPadrao;
             }
         }
+
+        @media (max-width: 480px){
+            &__links{
+                display: none;
+
+                &--is-btn{
+                    display: flex;
+                }
+            }
+        }
+
+        @media (max-width: 768px){
+            &__links{
+                max-width: 900px;
+               
+
+                &--is-btn{
+                    margin-top: 16px;
+                   
+                    
+                }
+            }
+
+        }
     }
+
+    @media (max-width: 480px){
+
+        &__li{
+            display: none;
+        }
+
+        &__logo{
+            display: flex;
+        }
+    }
+
 
 }
