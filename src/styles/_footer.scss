@@ -3,7 +3,10 @@
 .footer{
 
     background-color: variables.$colorLink;
-    padding: 2rem;
     border-top: 1px solid variables.$colorTwoPadrao;
     
+    &__text{
+      padding: 2rem;
+
+}
 }
