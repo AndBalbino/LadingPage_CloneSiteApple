@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
         if(distanciaAteOEvento < 0){
             clearInterval(contaOTempo);
-            document.querySelector('.hero__text').textContent = `O maior evento de tecnologia do Brasil expirou`;
+            document.querySelector('.hero__text').textContent = `Promoção expirou`;
         } 
     }, 1000);
     
