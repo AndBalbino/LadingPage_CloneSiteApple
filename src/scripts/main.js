@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function(){
     const dataDoEvento = new Date('Feb 26, 2024 19:00:00');
     const timeStampDoEvento = dataDoEvento.getTime();
 
-    // // Seção das imagens
-    // const buttons = document.querySelectorAll(".content__order__item");
-    // const image = document.querySelector("#image-content");
+    // Seção das imagens
+    const buttons = document.querySelectorAll(".content__order__item");
+    const image = document.querySelector("#image-content");
 
 
     //Seção do timer
@@ -37,27 +37,26 @@ document.addEventListener('DOMContentLoaded', function(){
     }, 1000);
     
     //Alterando as imagens
-    // buttons.forEach((btn) => {
-    //     btn.addEventListener("click", (e) => {
+    buttons.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
             
-    //         buttons.forEach((btn) => {
-    //             btn.querySelector(".content__order__color").classList.remove("content__order__color--selected");
-    //         });
+            buttons.forEach((btn) => {
+                btn.querySelector(".content__order__color").classList.remove("content__order__color--selected");
+            });
     
-    //         const button = e.target;
+            const button = e.target;
     
-    //         const id = button.getAttribute("id");
+            const id = button.getAttribute("id");
            
-    //         button.querySelector(".content__order__color").classList.add("content__order__color--selected");
+            button.querySelector(".content__order__color").classList.add("content__order__color--selected");
             
-    //         // image.classList.toggle("content__image--is-active");
-    //         // image.setAttribute("src", `./imagens/iphone_${id}.jpg`);
-    //         // console.loh(image);
-    //         // // setTimeout(() => {
-    //         // //     image.classList.toggle("content__image--is-active");
-    //         // // },200)
+            // image.setAttribute("src", `./imagens/iphone_${id}.jpg`);
+        
+            setTimeout(() => {
+                image.classList.toggle("content__image--is-active");
+            },200)
         
             
-    //     });
-    // });
+        });
+    });
 });
