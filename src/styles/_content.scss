@@ -45,6 +45,11 @@
                 display: block;
                 margin-top: 1rem;
             }
+            
+            @media (max-width: 768px){
+                display: block;
+                margin-top: 1rem;
+            }
 
         }
 
@@ -89,7 +94,7 @@
        }
 
        &__picker{
-        margin-bottom: 500px;
+        margin-bottom: 4rem;
        }
 
     }
